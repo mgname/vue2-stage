@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="./vue.js"></script>
+  <script>
+    // 响应式的数据变化，数据变化了可以监测到
+    // 数据的取值 和 更改值可以监控
+
+    console.log(Vue)
+
+    const vm = new Vue({
+      data() { // 代理数据
+        return {
+          name: 'wy',
+          age: 21,
+          address: {
+            num: 30,
+            content: '团风县',
+            type: {
+              short: true
+            }
+          }
+        }
+      }
+    })
+    console.log(vm)
+  </script>
+</body>
+</html>
